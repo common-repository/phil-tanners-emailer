@@ -1,0 +1,84 @@
+html .wppt_emailer {
+	box-sizing: border-box;
+}
+
+.wppt_emailer *,
+.wppt_emailer *:before,
+.wppt_emailer *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+.wppt_emailer fieldset {
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 1ex;
+	padding: 1em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	margin-right:2em;
+	position:relative;
+	background-color:White;
+}
+.wppt_emailer legend {
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 2em;
+	padding: 0.5ex 1em 0.3ex 1em;
+	width: 100%;
+	background-color: rgba(0,0,0,0.02);
+	color: #666;
+	font-family: sans-serif;
+}
+
+.wppt_emailer form label { 
+	display: inline-block;
+	text-align:right;
+	width: 9em;
+}
+.wppt_emailer input,
+.wppt_emailer select {
+	height:2em;
+	margin-bottom:2px;
+	/*padding: 1em !important;*/
+}
+.wppt_emailer input,
+.wppt_emailer select,
+.wppt_emailer textarea {
+	border: 1px solid #ddd;
+	background-color: #f9f9f9;
+	padding: 0.5ex 1ex;
+}
+.wppt_emailer input[type=number] { 
+	width:5em;
+}
+.wppt_emailer input[type=radio] { 
+	width:1em;
+	height:1.1em;
+}
+.wppt_emailer input[required], 
+.wppt_emailer select[required] {
+	background-image: radial-gradient(#F00 15%, transparent 18%), radial-gradient(#F00 15%, transparent 18%);
+	background-size: 2em 2em;
+	background-position: -1ex 0;
+	background-repeat: no-repeat;
+	border:1px solid #999 !important;
+	padding-left:1em !important;
+}
+.wppt_emailer input[type=radio][required] { 
+	padding-left:0 !important; 
+	background-image:none; 
+	background-color:rgba(255,0,0,0.33);
+}
+.wppt_emailer input.address,
+.wppt_emailer input[type="email"] {
+	width:25em;
+}
+.wppt_emailer input[type="tel"] {
+	width:10em;
+}
+.wppt_emailer input[type="date"] {
+	width:10em;
+}
+
+.wppt_emailer dt { font-weight: bold; }
+.wppt_emailer dd { font-family: monospace; color:#666; }
+
+.wppt_emailer .string { color: #245ccc; }
